@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9611124D2789D79200BFCC1A /* CGMetalScaleARGBAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9611124A2789D79200BFCC1A /* CGMetalScaleARGBAlpha.metal */; };
+		9611124E2789D79200BFCC1A /* CGMetalScaleARGBAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 9611124B2789D79200BFCC1A /* CGMetalScaleARGBAlpha.m */; };
+		96111253278AB27500BFCC1A /* NSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96111252278AB27500BFCC1A /* NSAlertView.m */; };
+		96507400275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073E8275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		96507401275C6FA400E8A26B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F1275C6FA400E8A26B /* ViewController+MASAdditions.m */; };
+		96507402275C6FA400E8A26B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F5275C6FA400E8A26B /* MASCompositeConstraint.m */; };
+		96507403275C6FA400E8A26B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F6275C6FA400E8A26B /* MASConstraintMaker.m */; };
+		96507404275C6FA400E8A26B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F7275C6FA400E8A26B /* MASLayoutConstraint.m */; };
+		96507405275C6FA400E8A26B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F8275C6FA400E8A26B /* NSArray+MASAdditions.m */; };
+		96507406275C6FA400E8A26B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073F9275C6FA400E8A26B /* View+MASAdditions.m */; };
+		96507407275C6FA400E8A26B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073FC275C6FA400E8A26B /* MASConstraint.m */; };
+		96507408275C6FA400E8A26B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073FE275C6FA400E8A26B /* MASViewConstraint.m */; };
+		96507409275C6FA400E8A26B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 965073FF275C6FA400E8A26B /* MASViewAttribute.m */; };
+		9650747E275C73D100E8A26B /* VGACustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9650747D275C73D100E8A26B /* VGACustomView.m */; };
+		967C59A6278B1FFC00B2FA83 /* ffmpeg in Resources */ = {isa = PBXBuildFile; fileRef = 967C59A5278B1FFC00B2FA83 /* ffmpeg */; };
+		967C59AD278B260000B2FA83 /* VGAVideoRecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C59AC278B260000B2FA83 /* VGAVideoRecode.m */; };
+		967C59B3278B2AB000B2FA83 /* VGAViewController+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C59B2278B2AB000B2FA83 /* VGAViewController+Alpha.m */; };
+		969E92AF27820AEB00EFD90F /* CGMetalDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E924C27820AEB00EFD90F /* CGMetalDevice.m */; };
+		969E92B127820AEB00EFD90F /* CGMetalTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E924E27820AEB00EFD90F /* CGMetalTexture.m */; };
+		969E92B327820AEB00EFD90F /* CGMetalOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E925327820AEB00EFD90F /* CGMetalOutput.m */; };
+		969E92B627820AEB00EFD90F /* CGMetalRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E925B27820AEB00EFD90F /* CGMetalRender.m */; };
+		969E92B827820AEB00EFD90F /* CGMetalPlayerInputMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E925E27820AEB00EFD90F /* CGMetalPlayerInputMac.m */; };
+		969E92B927820AEB00EFD90F /* CGMetalPixelBufferInput.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E925F27820AEB00EFD90F /* CGMetalPixelBufferInput.metal */; };
+		969E92BA27820AEB00EFD90F /* CGMetalPixelBufferInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E926127820AEB00EFD90F /* CGMetalPixelBufferInput.m */; };
+		969E92BB27820AEB00EFD90F /* CGMetalVideoInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E926327820AEB00EFD90F /* CGMetalVideoInput.m */; };
+		969E92BD27820AEB00EFD90F /* VGASemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E926B27820AEB00EFD90F /* VGASemaphore.m */; };
+		969E92BE27820AEB00EFD90F /* VGAVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E926E27820AEB00EFD90F /* VGAVideoEncoder.m */; };
+		969E92C027820AEB00EFD90F /* VGAVideoDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E927427820AEB00EFD90F /* VGAVideoDecoder.m */; };
+		969E92C527820AEB00EFD90F /* VGACodecConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E928127820AEB00EFD90F /* VGACodecConstant.m */; };
+		969E92C627820AEB00EFD90F /* VGAVideoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E928227820AEB00EFD90F /* VGAVideoInfo.m */; };
+		969E92C727820AEB00EFD90F /* VGAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E928427820AEB00EFD90F /* VGAFrame.m */; };
+		969E92C927820AEB00EFD90F /* CGMetalScaleAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E928A27820AEB00EFD90F /* CGMetalScaleAlpha.m */; };
+		969E92CA27820AEB00EFD90F /* CGMetalFlipX.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E928B27820AEB00EFD90F /* CGMetalFlipX.m */; };
+		969E92CB27820AEB00EFD90F /* CGMetalFlipX.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E928C27820AEB00EFD90F /* CGMetalFlipX.metal */; };
+		969E92CC27820AEB00EFD90F /* CGMetalBlendAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E928F27820AEB00EFD90F /* CGMetalBlendAlpha.metal */; };
+		969E92CD27820AEB00EFD90F /* CGMetalBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E929427820AEB00EFD90F /* CGMetalBasic.m */; };
+		969E92CE27820AEB00EFD90F /* CGMetalBasic.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E929527820AEB00EFD90F /* CGMetalBasic.metal */; };
+		969E92CF27820AEB00EFD90F /* CGMetalBlendScaleAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E929627820AEB00EFD90F /* CGMetalBlendScaleAlpha.metal */; };
+		969E92D127820AEB00EFD90F /* CGMetalScaleAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E929927820AEB00EFD90F /* CGMetalScaleAlpha.metal */; };
+		969E92D327820AEB00EFD90F /* CGMetalBlendScaleAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E929B27820AEB00EFD90F /* CGMetalBlendScaleAlpha.m */; };
+		969E92D427820AEB00EFD90F /* CGMetalBlendAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E929C27820AEB00EFD90F /* CGMetalBlendAlpha.m */; };
+		969E92D527820AEB00EFD90F /* CGMetalCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E929D27820AEB00EFD90F /* CGMetalCrop.m */; };
+		969E92D627820AEB00EFD90F /* CGMetalVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E92A127820AEB00EFD90F /* CGMetalVideoOutput.m */; };
+		969E92D727820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E92A427820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.metal */; };
+		969E92D827820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E92A527820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.m */; };
+		969E92D927820AEB00EFD90F /* CGMetalLayerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E92A727820AEB00EFD90F /* CGMetalLayerOutput.m */; };
+		969E92DA27820AEB00EFD90F /* CGMetalView.metal in Sources */ = {isa = PBXBuildFile; fileRef = 969E92A927820AEB00EFD90F /* CGMetalView.metal */; };
+		969E92DB27820AEB00EFD90F /* CGMetalNSViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 969E92AA27820AEB00EFD90F /* CGMetalNSViewOutput.m */; };
+		96BF180E278E954A0005D1D4 /* CGMetalSwitchAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF180D278E954A0005D1D4 /* CGMetalSwitchAlpha.m */; };
+		96BF1810278E95560005D1D4 /* CGMetalSwitchAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF180F278E95560005D1D4 /* CGMetalSwitchAlpha.metal */; };
+		96E233D52758691C00CB1336 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E233D42758691C00CB1336 /* AppDelegate.m */; };
+		96E233D82758691C00CB1336 /* VGAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E233D72758691C00CB1336 /* VGAViewController.m */; };
+		96E233DA2758691E00CB1336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E233D92758691E00CB1336 /* Assets.xcassets */; };
+		96E233DD2758691E00CB1336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E233DB2758691E00CB1336 /* Main.storyboard */; };
+		96E233DF2758691E00CB1336 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E233DE2758691E00CB1336 /* main.m */; };
+		96E2356A2758742600CB1336 /* VGATaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E235632758742500CB1336 /* VGATaskManager.m */; };
+		96E2356D2758742600CB1336 /* VGAConvertEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E235692758742500CB1336 /* VGAConvertEncoder.m */; };
+		96E25C56275A00CD00CB1336 /* VGAPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E25C55275A00CD00CB1336 /* VGAPreviewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9611124A2789D79200BFCC1A /* CGMetalScaleARGBAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalScaleARGBAlpha.metal; sourceTree = "<group>"; };
+		9611124B2789D79200BFCC1A /* CGMetalScaleARGBAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalScaleARGBAlpha.m; sourceTree = "<group>"; };
+		9611124C2789D79200BFCC1A /* CGMetalScaleARGBAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalScaleARGBAlpha.h; sourceTree = "<group>"; };
+		96111251278AB27500BFCC1A /* NSAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAlertView.h; sourceTree = "<group>"; };
+		96111252278AB27500BFCC1A /* NSAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAlertView.m; sourceTree = "<group>"; };
+		965073E7275C6FA400E8A26B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		965073E8275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		965073E9275C6FA400E8A26B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		965073EA275C6FA400E8A26B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		965073EB275C6FA400E8A26B /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		965073EC275C6FA400E8A26B /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		965073ED275C6FA400E8A26B /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		965073EE275C6FA400E8A26B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		965073EF275C6FA400E8A26B /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		965073F0275C6FA400E8A26B /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		965073F1275C6FA400E8A26B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		965073F2275C6FA400E8A26B /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		965073F3275C6FA400E8A26B /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		965073F4275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		965073F5275C6FA400E8A26B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		965073F6275C6FA400E8A26B /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		965073F7275C6FA400E8A26B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		965073F8275C6FA400E8A26B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		965073F9275C6FA400E8A26B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		965073FA275C6FA400E8A26B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		965073FB275C6FA400E8A26B /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		965073FC275C6FA400E8A26B /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		965073FD275C6FA400E8A26B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		965073FE275C6FA400E8A26B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		965073FF275C6FA400E8A26B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		9650747C275C73D100E8A26B /* VGACustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VGACustomView.h; sourceTree = "<group>"; };
+		9650747D275C73D100E8A26B /* VGACustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGACustomView.m; sourceTree = "<group>"; };
+		967C59A5278B1FFC00B2FA83 /* ffmpeg */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg; sourceTree = "<group>"; };
+		967C59AB278B260000B2FA83 /* VGAVideoRecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VGAVideoRecode.h; sourceTree = "<group>"; };
+		967C59AC278B260000B2FA83 /* VGAVideoRecode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGAVideoRecode.m; sourceTree = "<group>"; };
+		967C59B1278B2AB000B2FA83 /* VGAViewController+Alpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VGAViewController+Alpha.h"; sourceTree = "<group>"; };
+		967C59B2278B2AB000B2FA83 /* VGAViewController+Alpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "VGAViewController+Alpha.m"; sourceTree = "<group>"; };
+		969E924C27820AEB00EFD90F /* CGMetalDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalDevice.m; sourceTree = "<group>"; };
+		969E924E27820AEB00EFD90F /* CGMetalTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalTexture.m; sourceTree = "<group>"; };
+		969E925127820AEB00EFD90F /* CGMetalRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalRender.h; sourceTree = "<group>"; };
+		969E925327820AEB00EFD90F /* CGMetalOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalOutput.m; sourceTree = "<group>"; };
+		969E925427820AEB00EFD90F /* CGMetalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalDevice.h; sourceTree = "<group>"; };
+		969E925527820AEB00EFD90F /* CGMetalInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalInput.h; sourceTree = "<group>"; };
+		969E925827820AEB00EFD90F /* CGMetalTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalTexture.h; sourceTree = "<group>"; };
+		969E925A27820AEB00EFD90F /* CGMetalOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOutput.h; sourceTree = "<group>"; };
+		969E925B27820AEB00EFD90F /* CGMetalRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalRender.m; sourceTree = "<group>"; };
+		969E925E27820AEB00EFD90F /* CGMetalPlayerInputMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPlayerInputMac.m; sourceTree = "<group>"; };
+		969E925F27820AEB00EFD90F /* CGMetalPixelBufferInput.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalPixelBufferInput.metal; sourceTree = "<group>"; };
+		969E926027820AEB00EFD90F /* CGMetalVideoInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalVideoInput.h; sourceTree = "<group>"; };
+		969E926127820AEB00EFD90F /* CGMetalPixelBufferInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPixelBufferInput.m; sourceTree = "<group>"; };
+		969E926227820AEB00EFD90F /* CGMetalPlayerInputMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPlayerInputMac.h; sourceTree = "<group>"; };
+		969E926327820AEB00EFD90F /* CGMetalVideoInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalVideoInput.m; sourceTree = "<group>"; };
+		969E926427820AEB00EFD90F /* CGMetalPixelBufferInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPixelBufferInput.h; sourceTree = "<group>"; };
+		969E926927820AEB00EFD90F /* VGASemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGASemaphore.h; sourceTree = "<group>"; };
+		969E926B27820AEB00EFD90F /* VGASemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGASemaphore.m; sourceTree = "<group>"; };
+		969E926D27820AEB00EFD90F /* VGAVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAVideoEncoder.h; sourceTree = "<group>"; };
+		969E926E27820AEB00EFD90F /* VGAVideoEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGAVideoEncoder.m; sourceTree = "<group>"; };
+		969E927227820AEB00EFD90F /* VGAVideoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAVideoDecoder.h; sourceTree = "<group>"; };
+		969E927427820AEB00EFD90F /* VGAVideoDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGAVideoDecoder.m; sourceTree = "<group>"; };
+		969E928027820AEB00EFD90F /* VGAFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAFrame.h; sourceTree = "<group>"; };
+		969E928127820AEB00EFD90F /* VGACodecConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGACodecConstant.m; sourceTree = "<group>"; };
+		969E928227820AEB00EFD90F /* VGAVideoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGAVideoInfo.m; sourceTree = "<group>"; };
+		969E928327820AEB00EFD90F /* VGACodecConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGACodecConstant.h; sourceTree = "<group>"; };
+		969E928427820AEB00EFD90F /* VGAFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGAFrame.m; sourceTree = "<group>"; };
+		969E928527820AEB00EFD90F /* VGAVideoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAVideoInfo.h; sourceTree = "<group>"; };
+		969E928827820AEB00EFD90F /* CGMetalBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBasic.h; sourceTree = "<group>"; };
+		969E928A27820AEB00EFD90F /* CGMetalScaleAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalScaleAlpha.m; sourceTree = "<group>"; };
+		969E928B27820AEB00EFD90F /* CGMetalFlipX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalFlipX.m; sourceTree = "<group>"; };
+		969E928C27820AEB00EFD90F /* CGMetalFlipX.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalFlipX.metal; sourceTree = "<group>"; };
+		969E928D27820AEB00EFD90F /* CGMetalCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalCrop.h; sourceTree = "<group>"; };
+		969E928E27820AEB00EFD90F /* CGMetalBlendAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBlendAlpha.h; sourceTree = "<group>"; };
+		969E928F27820AEB00EFD90F /* CGMetalBlendAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalBlendAlpha.metal; sourceTree = "<group>"; };
+		969E929027820AEB00EFD90F /* CGMetalBlendScaleAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBlendScaleAlpha.h; sourceTree = "<group>"; };
+		969E929227820AEB00EFD90F /* CGMetalScaleAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalScaleAlpha.h; sourceTree = "<group>"; };
+		969E929327820AEB00EFD90F /* CGMetalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalHeader.h; sourceTree = "<group>"; };
+		969E929427820AEB00EFD90F /* CGMetalBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBasic.m; sourceTree = "<group>"; };
+		969E929527820AEB00EFD90F /* CGMetalBasic.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalBasic.metal; sourceTree = "<group>"; };
+		969E929627820AEB00EFD90F /* CGMetalBlendScaleAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalBlendScaleAlpha.metal; sourceTree = "<group>"; };
+		969E929727820AEB00EFD90F /* CGMetalFlipX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalFlipX.h; sourceTree = "<group>"; };
+		969E929927820AEB00EFD90F /* CGMetalScaleAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalScaleAlpha.metal; sourceTree = "<group>"; };
+		969E929B27820AEB00EFD90F /* CGMetalBlendScaleAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBlendScaleAlpha.m; sourceTree = "<group>"; };
+		969E929C27820AEB00EFD90F /* CGMetalBlendAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBlendAlpha.m; sourceTree = "<group>"; };
+		969E929D27820AEB00EFD90F /* CGMetalCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalCrop.m; sourceTree = "<group>"; };
+		969E92A127820AEB00EFD90F /* CGMetalVideoOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalVideoOutput.m; sourceTree = "<group>"; };
+		969E92A227820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPixelBufferSurfaceOutput.h; sourceTree = "<group>"; };
+		969E92A327820AEB00EFD90F /* CGMetalVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalVideoOutput.h; sourceTree = "<group>"; };
+		969E92A427820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalPixelBufferSurfaceOutput.metal; sourceTree = "<group>"; };
+		969E92A527820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPixelBufferSurfaceOutput.m; sourceTree = "<group>"; };
+		969E92A727820AEB00EFD90F /* CGMetalLayerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalLayerOutput.m; sourceTree = "<group>"; };
+		969E92A927820AEB00EFD90F /* CGMetalView.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalView.metal; sourceTree = "<group>"; };
+		969E92AA27820AEB00EFD90F /* CGMetalNSViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalNSViewOutput.m; sourceTree = "<group>"; };
+		969E92AB27820AEB00EFD90F /* CGMetalLayerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalLayerOutput.h; sourceTree = "<group>"; };
+		969E92AC27820AEB00EFD90F /* CGMetalNSViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalNSViewOutput.h; sourceTree = "<group>"; };
+		969E92AD27820AEB00EFD90F /* CGMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetal.h; sourceTree = "<group>"; };
+		96BF180C278E954A0005D1D4 /* CGMetalSwitchAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGMetalSwitchAlpha.h; sourceTree = "<group>"; };
+		96BF180D278E954A0005D1D4 /* CGMetalSwitchAlpha.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGMetalSwitchAlpha.m; sourceTree = "<group>"; };
+		96BF180F278E95560005D1D4 /* CGMetalSwitchAlpha.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CGMetalSwitchAlpha.metal; sourceTree = "<group>"; };
+		96E233D02758691C00CB1336 /* VGAMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGAMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E233D32758691C00CB1336 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96E233D42758691C00CB1336 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96E233D62758691C00CB1336 /* VGAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VGAViewController.h; sourceTree = "<group>"; };
+		96E233D72758691C00CB1336 /* VGAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGAViewController.m; sourceTree = "<group>"; };
+		96E233D92758691E00CB1336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96E233DC2758691E00CB1336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96E233DE2758691E00CB1336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96E233E02758691E00CB1336 /* CGMetalMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CGMetalMac.entitlements; sourceTree = "<group>"; };
+		96E235622758742500CB1336 /* VGAConvertEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAConvertEncoder.h; sourceTree = "<group>"; };
+		96E235632758742500CB1336 /* VGATaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGATaskManager.m; sourceTree = "<group>"; };
+		96E235652758742500CB1336 /* VGATaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGATaskManager.h; sourceTree = "<group>"; };
+		96E235692758742500CB1336 /* VGAConvertEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGAConvertEncoder.m; sourceTree = "<group>"; };
+		96E25C54275A00CD00CB1336 /* VGAPreviewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VGAPreviewController.h; sourceTree = "<group>"; };
+		96E25C55275A00CD00CB1336 /* VGAPreviewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VGAPreviewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96E233CD2758691C00CB1336 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9611124F278AB21A00BFCC1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96111251278AB27500BFCC1A /* NSAlertView.h */,
+				96111252278AB27500BFCC1A /* NSAlertView.m */,
+				9650747C275C73D100E8A26B /* VGACustomView.h */,
+				9650747D275C73D100E8A26B /* VGACustomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		965073E6275C6FA400E8A26B /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				965073E7275C6FA400E8A26B /* MASCompositeConstraint.h */,
+				965073F5275C6FA400E8A26B /* MASCompositeConstraint.m */,
+				965073F3275C6FA400E8A26B /* MASConstraint.h */,
+				965073FC275C6FA400E8A26B /* MASConstraint.m */,
+				965073E9275C6FA400E8A26B /* MASConstraint+Private.h */,
+				965073EC275C6FA400E8A26B /* MASConstraintMaker.h */,
+				965073F6275C6FA400E8A26B /* MASConstraintMaker.m */,
+				965073EA275C6FA400E8A26B /* MASLayoutConstraint.h */,
+				965073F7275C6FA400E8A26B /* MASLayoutConstraint.m */,
+				965073FB275C6FA400E8A26B /* Masonry.h */,
+				965073EF275C6FA400E8A26B /* MASUtilities.h */,
+				965073F0275C6FA400E8A26B /* MASViewAttribute.h */,
+				965073FF275C6FA400E8A26B /* MASViewAttribute.m */,
+				965073F2275C6FA400E8A26B /* MASViewConstraint.h */,
+				965073FE275C6FA400E8A26B /* MASViewConstraint.m */,
+				965073EE275C6FA400E8A26B /* NSArray+MASAdditions.h */,
+				965073F8275C6FA400E8A26B /* NSArray+MASAdditions.m */,
+				965073EB275C6FA400E8A26B /* NSArray+MASShorthandAdditions.h */,
+				965073F4275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.h */,
+				965073E8275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				965073ED275C6FA400E8A26B /* View+MASAdditions.h */,
+				965073F9275C6FA400E8A26B /* View+MASAdditions.m */,
+				965073FA275C6FA400E8A26B /* View+MASShorthandAdditions.h */,
+				965073FD275C6FA400E8A26B /* ViewController+MASAdditions.h */,
+				965073F1275C6FA400E8A26B /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		967C59A4278B1FFC00B2FA83 /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				967C59A5278B1FFC00B2FA83 /* ffmpeg */,
+			);
+			name = FFmpeg;
+			path = VGAMac/FFmpeg;
+			sourceTree = "<group>";
+		};
+		967C59A7278B204E00B2FA83 /* VGATool */ = {
+			isa = PBXGroup;
+			children = (
+				969E926527820AEB00EFD90F /* Codec */,
+				969E924927820AEB00EFD90F /* Metal */,
+			);
+			path = VGATool;
+			sourceTree = "<group>";
+		};
+		969E924927820AEB00EFD90F /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				969E924A27820AEB00EFD90F /* Core */,
+				969E925D27820AEB00EFD90F /* Input */,
+				969E928727820AEB00EFD90F /* Basic */,
+				969E929E27820AEB00EFD90F /* Output */,
+				969E92AD27820AEB00EFD90F /* CGMetal.h */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		969E924A27820AEB00EFD90F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				969E925527820AEB00EFD90F /* CGMetalInput.h */,
+				969E925427820AEB00EFD90F /* CGMetalDevice.h */,
+				969E924C27820AEB00EFD90F /* CGMetalDevice.m */,
+				969E925A27820AEB00EFD90F /* CGMetalOutput.h */,
+				969E925327820AEB00EFD90F /* CGMetalOutput.m */,
+				969E925127820AEB00EFD90F /* CGMetalRender.h */,
+				969E925B27820AEB00EFD90F /* CGMetalRender.m */,
+				969E925827820AEB00EFD90F /* CGMetalTexture.h */,
+				969E924E27820AEB00EFD90F /* CGMetalTexture.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		969E925D27820AEB00EFD90F /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				969E926427820AEB00EFD90F /* CGMetalPixelBufferInput.h */,
+				969E926127820AEB00EFD90F /* CGMetalPixelBufferInput.m */,
+				969E925F27820AEB00EFD90F /* CGMetalPixelBufferInput.metal */,
+				969E926227820AEB00EFD90F /* CGMetalPlayerInputMac.h */,
+				969E925E27820AEB00EFD90F /* CGMetalPlayerInputMac.m */,
+				969E926027820AEB00EFD90F /* CGMetalVideoInput.h */,
+				969E926327820AEB00EFD90F /* CGMetalVideoInput.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		969E926527820AEB00EFD90F /* Codec */ = {
+			isa = PBXGroup;
+			children = (
+				969E926627820AEB00EFD90F /* Basic */,
+				969E926C27820AEB00EFD90F /* Encode */,
+				969E926F27820AEB00EFD90F /* Decode */,
+			);
+			path = Codec;
+			sourceTree = "<group>";
+		};
+		969E926627820AEB00EFD90F /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				969E926927820AEB00EFD90F /* VGASemaphore.h */,
+				969E926B27820AEB00EFD90F /* VGASemaphore.m */,
+				969E928327820AEB00EFD90F /* VGACodecConstant.h */,
+				969E928127820AEB00EFD90F /* VGACodecConstant.m */,
+				969E928027820AEB00EFD90F /* VGAFrame.h */,
+				969E928427820AEB00EFD90F /* VGAFrame.m */,
+				969E928527820AEB00EFD90F /* VGAVideoInfo.h */,
+				969E928227820AEB00EFD90F /* VGAVideoInfo.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		969E926C27820AEB00EFD90F /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				969E926D27820AEB00EFD90F /* VGAVideoEncoder.h */,
+				969E926E27820AEB00EFD90F /* VGAVideoEncoder.m */,
+			);
+			path = Encode;
+			sourceTree = "<group>";
+		};
+		969E926F27820AEB00EFD90F /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				969E927227820AEB00EFD90F /* VGAVideoDecoder.h */,
+				969E927427820AEB00EFD90F /* VGAVideoDecoder.m */,
+				967C59AB278B260000B2FA83 /* VGAVideoRecode.h */,
+				967C59AC278B260000B2FA83 /* VGAVideoRecode.m */,
+			);
+			path = Decode;
+			sourceTree = "<group>";
+		};
+		969E928727820AEB00EFD90F /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				969E929327820AEB00EFD90F /* CGMetalHeader.h */,
+				969E928827820AEB00EFD90F /* CGMetalBasic.h */,
+				969E929427820AEB00EFD90F /* CGMetalBasic.m */,
+				969E929527820AEB00EFD90F /* CGMetalBasic.metal */,
+				969E928E27820AEB00EFD90F /* CGMetalBlendAlpha.h */,
+				969E929C27820AEB00EFD90F /* CGMetalBlendAlpha.m */,
+				969E928F27820AEB00EFD90F /* CGMetalBlendAlpha.metal */,
+				969E929027820AEB00EFD90F /* CGMetalBlendScaleAlpha.h */,
+				969E929B27820AEB00EFD90F /* CGMetalBlendScaleAlpha.m */,
+				969E929627820AEB00EFD90F /* CGMetalBlendScaleAlpha.metal */,
+				9611124C2789D79200BFCC1A /* CGMetalScaleARGBAlpha.h */,
+				9611124B2789D79200BFCC1A /* CGMetalScaleARGBAlpha.m */,
+				9611124A2789D79200BFCC1A /* CGMetalScaleARGBAlpha.metal */,
+				969E929227820AEB00EFD90F /* CGMetalScaleAlpha.h */,
+				969E928A27820AEB00EFD90F /* CGMetalScaleAlpha.m */,
+				969E929927820AEB00EFD90F /* CGMetalScaleAlpha.metal */,
+				969E928D27820AEB00EFD90F /* CGMetalCrop.h */,
+				969E929D27820AEB00EFD90F /* CGMetalCrop.m */,
+				969E929727820AEB00EFD90F /* CGMetalFlipX.h */,
+				969E928B27820AEB00EFD90F /* CGMetalFlipX.m */,
+				969E928C27820AEB00EFD90F /* CGMetalFlipX.metal */,
+				96BF180C278E954A0005D1D4 /* CGMetalSwitchAlpha.h */,
+				96BF180D278E954A0005D1D4 /* CGMetalSwitchAlpha.m */,
+				96BF180F278E95560005D1D4 /* CGMetalSwitchAlpha.metal */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		969E929E27820AEB00EFD90F /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				969E92A227820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.h */,
+				969E92A527820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.m */,
+				969E92A427820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.metal */,
+				969E92A327820AEB00EFD90F /* CGMetalVideoOutput.h */,
+				969E92A127820AEB00EFD90F /* CGMetalVideoOutput.m */,
+				969E92AB27820AEB00EFD90F /* CGMetalLayerOutput.h */,
+				969E92A727820AEB00EFD90F /* CGMetalLayerOutput.m */,
+				969E92AC27820AEB00EFD90F /* CGMetalNSViewOutput.h */,
+				969E92AA27820AEB00EFD90F /* CGMetalNSViewOutput.m */,
+				969E92A927820AEB00EFD90F /* CGMetalView.metal */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		96E233C72758691C00CB1336 = {
+			isa = PBXGroup;
+			children = (
+				967C59A4278B1FFC00B2FA83 /* FFmpeg */,
+				96E233D22758691C00CB1336 /* VGAMac */,
+				96E233D12758691C00CB1336 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96E233D12758691C00CB1336 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96E233D02758691C00CB1336 /* VGAMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96E233D22758691C00CB1336 /* VGAMac */ = {
+			isa = PBXGroup;
+			children = (
+				967C59A7278B204E00B2FA83 /* VGATool */,
+				96E2355E27586E6E00CB1336 /* Example */,
+				96E233D32758691C00CB1336 /* AppDelegate.h */,
+				96E233D42758691C00CB1336 /* AppDelegate.m */,
+				96E233DB2758691E00CB1336 /* Main.storyboard */,
+				96E233D92758691E00CB1336 /* Assets.xcassets */,
+				96E233DE2758691E00CB1336 /* main.m */,
+				96E233E02758691E00CB1336 /* CGMetalMac.entitlements */,
+			);
+			path = VGAMac;
+			sourceTree = "<group>";
+		};
+		96E2355E27586E6E00CB1336 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				9611124F278AB21A00BFCC1A /* View */,
+				965073E6275C6FA400E8A26B /* Masonry */,
+				96E233D62758691C00CB1336 /* VGAViewController.h */,
+				96E233D72758691C00CB1336 /* VGAViewController.m */,
+				967C59B1278B2AB000B2FA83 /* VGAViewController+Alpha.h */,
+				967C59B2278B2AB000B2FA83 /* VGAViewController+Alpha.m */,
+				96E25C54275A00CD00CB1336 /* VGAPreviewController.h */,
+				96E25C55275A00CD00CB1336 /* VGAPreviewController.m */,
+				96E235622758742500CB1336 /* VGAConvertEncoder.h */,
+				96E235692758742500CB1336 /* VGAConvertEncoder.m */,
+				96E235652758742500CB1336 /* VGATaskManager.h */,
+				96E235632758742500CB1336 /* VGATaskManager.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96E233CF2758691C00CB1336 /* VGAMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E233E32758691E00CB1336 /* Build configuration list for PBXNativeTarget "VGAMac" */;
+			buildPhases = (
+				96E233CC2758691C00CB1336 /* Sources */,
+				96E233CD2758691C00CB1336 /* Frameworks */,
+				96E233CE2758691C00CB1336 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGAMac;
+			productName = CGMetalMac;
+			productReference = 96E233D02758691C00CB1336 /* VGAMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E233C82758691C00CB1336 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					96E233CF2758691C00CB1336 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 96E233CB2758691C00CB1336 /* Build configuration list for PBXProject "VGAMac" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96E233C72758691C00CB1336;
+			productRefGroup = 96E233D12758691C00CB1336 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E233CF2758691C00CB1336 /* VGAMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96E233CE2758691C00CB1336 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E233DA2758691E00CB1336 /* Assets.xcassets in Resources */,
+				967C59A6278B1FFC00B2FA83 /* ffmpeg in Resources */,
+				96E233DD2758691E00CB1336 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96E233CC2758691C00CB1336 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9650747E275C73D100E8A26B /* VGACustomView.m in Sources */,
+				969E92C027820AEB00EFD90F /* VGAVideoDecoder.m in Sources */,
+				96507400275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				96507405275C6FA400E8A26B /* NSArray+MASAdditions.m in Sources */,
+				969E92C727820AEB00EFD90F /* VGAFrame.m in Sources */,
+				969E92D427820AEB00EFD90F /* CGMetalBlendAlpha.m in Sources */,
+				969E92BA27820AEB00EFD90F /* CGMetalPixelBufferInput.m in Sources */,
+				96507407275C6FA400E8A26B /* MASConstraint.m in Sources */,
+				96507409275C6FA400E8A26B /* MASViewAttribute.m in Sources */,
+				969E92C627820AEB00EFD90F /* VGAVideoInfo.m in Sources */,
+				969E92B927820AEB00EFD90F /* CGMetalPixelBufferInput.metal in Sources */,
+				969E92C527820AEB00EFD90F /* VGACodecConstant.m in Sources */,
+				969E92BB27820AEB00EFD90F /* CGMetalVideoInput.m in Sources */,
+				969E92D627820AEB00EFD90F /* CGMetalVideoOutput.m in Sources */,
+				969E92CB27820AEB00EFD90F /* CGMetalFlipX.metal in Sources */,
+				969E92D827820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.m in Sources */,
+				969E92B627820AEB00EFD90F /* CGMetalRender.m in Sources */,
+				969E92C927820AEB00EFD90F /* CGMetalScaleAlpha.m in Sources */,
+				9611124E2789D79200BFCC1A /* CGMetalScaleARGBAlpha.m in Sources */,
+				969E92B327820AEB00EFD90F /* CGMetalOutput.m in Sources */,
+				969E92D127820AEB00EFD90F /* CGMetalScaleAlpha.metal in Sources */,
+				969E92AF27820AEB00EFD90F /* CGMetalDevice.m in Sources */,
+				969E92B827820AEB00EFD90F /* CGMetalPlayerInputMac.m in Sources */,
+				96BF180E278E954A0005D1D4 /* CGMetalSwitchAlpha.m in Sources */,
+				96111253278AB27500BFCC1A /* NSAlertView.m in Sources */,
+				969E92D527820AEB00EFD90F /* CGMetalCrop.m in Sources */,
+				969E92CE27820AEB00EFD90F /* CGMetalBasic.metal in Sources */,
+				969E92BE27820AEB00EFD90F /* VGAVideoEncoder.m in Sources */,
+				96E25C56275A00CD00CB1336 /* VGAPreviewController.m in Sources */,
+				969E92CD27820AEB00EFD90F /* CGMetalBasic.m in Sources */,
+				967C59B3278B2AB000B2FA83 /* VGAViewController+Alpha.m in Sources */,
+				967C59AD278B260000B2FA83 /* VGAVideoRecode.m in Sources */,
+				96507408275C6FA400E8A26B /* MASViewConstraint.m in Sources */,
+				969E92DA27820AEB00EFD90F /* CGMetalView.metal in Sources */,
+				96507406275C6FA400E8A26B /* View+MASAdditions.m in Sources */,
+				96E2356D2758742600CB1336 /* VGAConvertEncoder.m in Sources */,
+				969E92CA27820AEB00EFD90F /* CGMetalFlipX.m in Sources */,
+				969E92D927820AEB00EFD90F /* CGMetalLayerOutput.m in Sources */,
+				96507402275C6FA400E8A26B /* MASCompositeConstraint.m in Sources */,
+				96E233D82758691C00CB1336 /* VGAViewController.m in Sources */,
+				969E92D327820AEB00EFD90F /* CGMetalBlendScaleAlpha.m in Sources */,
+				969E92CF27820AEB00EFD90F /* CGMetalBlendScaleAlpha.metal in Sources */,
+				96E2356A2758742600CB1336 /* VGATaskManager.m in Sources */,
+				96507404275C6FA400E8A26B /* MASLayoutConstraint.m in Sources */,
+				96E233DF2758691E00CB1336 /* main.m in Sources */,
+				969E92CC27820AEB00EFD90F /* CGMetalBlendAlpha.metal in Sources */,
+				96507403275C6FA400E8A26B /* MASConstraintMaker.m in Sources */,
+				969E92B127820AEB00EFD90F /* CGMetalTexture.m in Sources */,
+				969E92DB27820AEB00EFD90F /* CGMetalNSViewOutput.m in Sources */,
+				9611124D2789D79200BFCC1A /* CGMetalScaleARGBAlpha.metal in Sources */,
+				969E92BD27820AEB00EFD90F /* VGASemaphore.m in Sources */,
+				969E92D727820AEB00EFD90F /* CGMetalPixelBufferSurfaceOutput.metal in Sources */,
+				96E233D52758691C00CB1336 /* AppDelegate.m in Sources */,
+				96507401275C6FA400E8A26B /* ViewController+MASAdditions.m in Sources */,
+				96BF1810278E95560005D1D4 /* CGMetalSwitchAlpha.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96E233DB2758691E00CB1336 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E233DC2758691E00CB1336 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96E233E12758691E00CB1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		96E233E22758691E00CB1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		96E233E42758691E00CB1336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_MISSING_NOESCAPE = NO;
+				CODE_SIGN_ENTITLEMENTS = CGMetalMac/CGMetalMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		96E233E52758691E00CB1336 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_MISSING_NOESCAPE = NO;
+				CODE_SIGN_ENTITLEMENTS = CGMetalMac/CGMetalMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E233CB2758691C00CB1336 /* Build configuration list for PBXProject "VGAMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E233E12758691E00CB1336 /* Debug */,
+				96E233E22758691E00CB1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E233E32758691E00CB1336 /* Build configuration list for PBXNativeTarget "VGAMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E233E42758691E00CB1336 /* Debug */,
+				96E233E52758691E00CB1336 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96E233C82758691C00CB1336 /* Project object */;
+}
