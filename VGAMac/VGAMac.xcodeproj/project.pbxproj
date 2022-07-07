@@ -73,6 +73,7 @@
 		9611124C2789D79200BFCC1A /* CGMetalScaleARGBAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalScaleARGBAlpha.h; sourceTree = "<group>"; };
 		96111251278AB27500BFCC1A /* NSAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSAlertView.h; sourceTree = "<group>"; };
 		96111252278AB27500BFCC1A /* NSAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSAlertView.m; sourceTree = "<group>"; };
+		964840E628771267007C5145 /* VGAMac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = VGAMac.entitlements; sourceTree = "<group>"; };
 		965073E7275C6FA400E8A26B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		965073E8275C6FA400E8A26B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		965073E9275C6FA400E8A26B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -173,7 +174,6 @@
 		96E233D92758691E00CB1336 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E233DC2758691E00CB1336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E233DE2758691E00CB1336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		96E233E02758691E00CB1336 /* CGMetalMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CGMetalMac.entitlements; sourceTree = "<group>"; };
 		96E235622758742500CB1336 /* VGAConvertEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGAConvertEncoder.h; sourceTree = "<group>"; };
 		96E235632758742500CB1336 /* VGATaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGATaskManager.m; sourceTree = "<group>"; };
 		96E235652758742500CB1336 /* VGATaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGATaskManager.h; sourceTree = "<group>"; };
@@ -409,6 +409,7 @@
 		96E233D22758691C00CB1336 /* VGAMac */ = {
 			isa = PBXGroup;
 			children = (
+				964840E628771267007C5145 /* VGAMac.entitlements */,
 				967C59A7278B204E00B2FA83 /* VGATool */,
 				96E2355E27586E6E00CB1336 /* Example */,
 				96E233D32758691C00CB1336 /* AppDelegate.h */,
@@ -416,7 +417,6 @@
 				96E233DB2758691E00CB1336 /* Main.storyboard */,
 				96E233D92758691E00CB1336 /* Assets.xcassets */,
 				96E233DE2758691E00CB1336 /* main.m */,
-				96E233E02758691E00CB1336 /* CGMetalMac.entitlements */,
 			);
 			path = VGAMac;
 			sourceTree = "<group>";
@@ -699,12 +699,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_MISSING_NOESCAPE = NO;
-				CODE_SIGN_ENTITLEMENTS = CGMetalMac/CGMetalMac.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VGAMac/VGAMac.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -713,9 +713,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.vga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -727,12 +727,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_WARN_MISSING_NOESCAPE = NO;
-				CODE_SIGN_ENTITLEMENTS = CGMetalMac/CGMetalMac.entitlements;
+				CODE_SIGN_ENTITLEMENTS = VGAMac/VGAMac.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -741,9 +741,9 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jason.vga;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
