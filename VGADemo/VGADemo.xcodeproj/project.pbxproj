@@ -22,6 +22,16 @@
 		96BF1812278EBEB70005D1D4 /* hevcWithAlpha.mov in Resources */ = {isa = PBXBuildFile; fileRef = 96BF1811278EBEB70005D1D4 /* hevcWithAlpha.mov */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		965D8EDD296A7AC500DAABA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 965D8ED9296A7AC500DAABA3 /* VGAPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9627F80F277E0EE60095FF8F;
+			remoteInfo = VGAPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		969E8E38277EAA6200EFD90F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -49,6 +59,7 @@
 		9627F855277E10090095FF8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9627F857277E10090095FF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627F858277E10090095FF8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		965D8ED9296A7AC500DAABA3 /* VGAPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VGAPlayer.xcodeproj; path = VGAPlayer/VGAPlayer.xcodeproj; sourceTree = "<group>"; };
 		969E8E35277EAA6100EFD90F /* VGAPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VGAPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A20B0D27849CB700F7F7CF /* leftScaleAlpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = leftScaleAlpha.mp4; sourceTree = "<group>"; };
 		96A20B1127849CB800F7F7CF /* leftAlpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = leftAlpha.mp4; sourceTree = "<group>"; };
@@ -70,6 +81,7 @@
 		9627F83A277E10060095FF8F = {
 			isa = PBXGroup;
 			children = (
+				965D8ED9296A7AC500DAABA3 /* VGAPlayer.xcodeproj */,
 				9627F845277E10060095FF8F /* VGADemo */,
 				9627F844277E10060095FF8F /* Products */,
 				969E8E34277EAA6100EFD90F /* Frameworks */,
@@ -99,6 +111,14 @@
 				9627F858277E10090095FF8F /* main.m */,
 			);
 			path = VGADemo;
+			sourceTree = "<group>";
+		};
+		965D8EDA296A7AC500DAABA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				965D8EDE296A7AC500DAABA3 /* VGAPlayer.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		969E8E34277EAA6100EFD90F /* Frameworks */ = {
@@ -169,12 +189,28 @@
 			mainGroup = 9627F83A277E10060095FF8F;
 			productRefGroup = 9627F844277E10060095FF8F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 965D8EDA296A7AC500DAABA3 /* Products */;
+					ProjectRef = 965D8ED9296A7AC500DAABA3 /* VGAPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9627F842277E10060095FF8F /* VGADemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		965D8EDE296A7AC500DAABA3 /* VGAPlayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VGAPlayer.framework;
+			remoteRef = 965D8EDD296A7AC500DAABA3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9627F841277E10060095FF8F /* Resources */ = {
