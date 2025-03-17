@@ -15,6 +15,7 @@
 		9627F853277E10090095FF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9627F852277E10090095FF8F /* Assets.xcassets */; };
 		9627F856277E10090095FF8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9627F854277E10090095FF8F /* LaunchScreen.storyboard */; };
 		9627F859277E10090095FF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9627F858277E10090095FF8F /* main.m */; };
+		966BE1672B99C5D100F96F2C /* mak_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 966BE1662B99C5D100F96F2C /* mak_video.mp4 */; };
 		969E8E36277EAA6100EFD90F /* VGAPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 969E8E35277EAA6100EFD90F /* VGAPlayer.framework */; };
 		969E8E37277EAA6100EFD90F /* VGAPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 969E8E35277EAA6100EFD90F /* VGAPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		96A20B1827849CB800F7F7CF /* leftScaleAlpha.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 96A20B0D27849CB700F7F7CF /* leftScaleAlpha.mp4 */; };
@@ -60,6 +61,7 @@
 		9627F857277E10090095FF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9627F858277E10090095FF8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		965D8ED9296A7AC500DAABA3 /* VGAPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VGAPlayer.xcodeproj; path = VGAPlayer/VGAPlayer.xcodeproj; sourceTree = "<group>"; };
+		966BE1662B99C5D100F96F2C /* mak_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = mak_video.mp4; sourceTree = "<group>"; };
 		969E8E35277EAA6100EFD90F /* VGAPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VGAPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A20B0D27849CB700F7F7CF /* leftScaleAlpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = leftScaleAlpha.mp4; sourceTree = "<group>"; };
 		96A20B1127849CB800F7F7CF /* leftAlpha.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = leftAlpha.mp4; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		96A20B0727849CB700F7F7CF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				966BE1662B99C5D100F96F2C /* mak_video.mp4 */,
 				96BF1811278EBEB70005D1D4 /* hevcWithAlpha.mov */,
 				96A20B1127849CB800F7F7CF /* leftAlpha.mp4 */,
 				96A20B0D27849CB700F7F7CF /* leftScaleAlpha.mp4 */,
@@ -170,7 +173,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				CLASSPREFIX = VGA;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = com.jason.vga;
 				TargetAttributes = {
 					9627F842277E10060095FF8F = {
@@ -217,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966BE1672B99C5D100F96F2C /* mak_video.mp4 in Resources */,
 				96A20B1827849CB800F7F7CF /* leftScaleAlpha.mp4 in Resources */,
 				96A20B1C27849CB800F7F7CF /* leftAlpha.mp4 in Resources */,
 				9611123A2789937300BFCC1A /* rightAlpha.mp4 in Resources */,
@@ -300,6 +304,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -359,6 +364,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -382,7 +388,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				DEVELOPMENT_TEAM = HXAGUHJB6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VGADemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -390,13 +396,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jason.metal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blue.youleap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +416,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				DEVELOPMENT_TEAM = HXAGUHJB6V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VGADemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -418,13 +424,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jason.metal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blue.youleap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

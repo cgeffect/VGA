@@ -66,13 +66,13 @@
 //            NSString *resPath = [[NSBundle mainBundle] pathForResource:@"you rgba path" ofType:@"mp4"];
 //            [self playVGA:resPath mode:VGAAlphaModeRGBA];
         } else if (indexPath.row == 1) {
-            NSString *resPath = [[NSBundle mainBundle] pathForResource:@"leftAlpha" ofType:@"mp4"];
+            NSString *resPath = [[NSBundle mainBundle] pathForResource:@"mak_video" ofType:@"mp4"];
             [self playVGA:resPath mode:VGAAlphaModeLeftAlpha];
         } else if (indexPath.row == 2) {
             NSString *resPath = [[NSBundle mainBundle] pathForResource:@"leftScaleAlpha" ofType:@"mp4"];
             [self playVGA:resPath mode:VGAAlphaModeLeftScaleAlpha];
         } else if (indexPath.row == 3) {
-            NSString *resPath = [[NSBundle mainBundle] pathForResource:@"rightAlpha" ofType:@"mp4"];
+            NSString *resPath = [[NSBundle mainBundle] pathForResource:@"mak_video" ofType:@"mp4"];
             [self playVGA:resPath mode:VGAAlphaModeRightAlpha];
         } else if (indexPath.row == 4) {
             NSString *resPath = [[NSBundle mainBundle] pathForResource:@"rightScaleAlpha" ofType:@"mp4"];

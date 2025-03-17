@@ -32,7 +32,7 @@
         //只初始化一次
         MTLRenderPipelineDescriptor *pipelineDescriptor = [MTLRenderPipelineDescriptor new];
         pipelineDescriptor.label = @"Offscreen Render Pipeline";
-        pipelineDescriptor.sampleCount = 1;
+        pipelineDescriptor.rasterSampleCount = 1;
         pipelineDescriptor.vertexFunction = vertexFunc;
         pipelineDescriptor.fragmentFunction = fragmentFunc;
 //        MTLVertexDescriptor *vertexDescriptor = [MTLVertexDescriptor vertexDescriptor];
