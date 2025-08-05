@@ -11,6 +11,7 @@
 #import "VGAPreviewController.h"
 #import "VGACustomView.h"
 #import "VGAVideoRecode.h"
+#import "NSAlertView.h"
 
 @interface VGAViewController ()<NSTableViewDelegate, NSTableViewDataSource, VGAEncodeDelegate, VGACustomViewDelegate>
 {
@@ -26,6 +27,7 @@
 @property(nonatomic, strong)NSComboBox *comboBox;
 @property(nonatomic, strong)NSComboBox *comboBoxOut;
 @property(nonatomic, strong)NSButton *startBtn;
+@property(nonatomic, strong)NSButton *clearBtn;
 @property(nonatomic, strong)VGATaskManager *manager;
 @end
 
@@ -188,6 +190,14 @@
 }
 
 - (void)codecAct:(NSButton *)sender {
+    if (_manager.srcURLs.count <= 0) {
+        [NSAlertView alertView:@"没有数据可用" confirm:^{
+                        
+        } cancel:^{
+            
+        }];
+        return;
+    }
     [sender setTitle:@"转码中"];
     sender.enabled = NO;
     
@@ -231,7 +241,12 @@
     }
 }
 
-- (void)doTask:(NSURL *)srcURL outURL:(NSURL *)outURL mode:(VGAInputAlphaMode)inputMode output:(VGAOutputAlphaMode)output {    
+- (void)clearAct:(NSButton *)btn {
+    [self reset];
+    [self->_inputTab reloadData];
+}
+
+- (void)doTask:(NSURL *)srcURL outURL:(NSURL *)outURL mode:(VGAInputAlphaMode)inputMode output:(VGAOutputAlphaMode)output {
     VGAConvertEncoder *encode = [[VGAConvertEncoder alloc] init];
     encode.inputMode = inputMode;
     encode.outputMode = output;

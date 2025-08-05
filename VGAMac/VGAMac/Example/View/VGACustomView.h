@@ -24,16 +24,18 @@ NS_ASSUME_NONNULL_BEGIN
 #define 输入源 @"输入源"
 #define 转换进度 @"转换进度"
 #define 生成 @"生成"
+#define 清除 @"清除"
 
 @protocol VGACustomViewDelegate <NSObject>
 - (void)inputAct;
 - (void)outputAct;
 - (void)codecAct:(NSButton *)btn;
-
+- (void)clearAct:(NSButton *)btn;
 @end
 
 @interface VGACustomView : NSView
 @property(nonatomic, strong)NSButton *codecBtn;
+@property(nonatomic, strong)NSButton *clearBtn;
 @property(nonatomic, strong)NSComboBox *comboBox;
 @property(nonatomic, strong)NSComboBox *comboBoxOut;
 @property(nonatomic, strong)NSTableView *tabelView;

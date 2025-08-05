@@ -84,6 +84,20 @@
             make.height.mas_equalTo(40);
         }];
 
+        _clearBtn = [NSButton buttonWithTitle:清除 target:self action:@selector(clearAct:)];
+        [_clearBtn setBordered:NO];
+        [_clearBtn setWantsLayer:YES];
+        _clearBtn.layer.backgroundColor = NSColor.whiteColor.CGColor;
+        _clearBtn.layer.cornerRadius = 10;
+        _clearBtn.contentTintColor = NSColor.blackColor;
+        [self addSubview:_clearBtn];
+        [_clearBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.equalTo(self);
+            make.top.equalTo(_codecBtn.mas_bottom).offset(10);
+            make.width.mas_equalTo(70);
+            make.height.mas_equalTo(40);
+        }];
+        
         _comboBox = [[NSComboBox alloc] init];
         _comboBox.buttonBordered = NO;
         [_comboBox setWantsLayer:YES];
@@ -172,6 +186,9 @@
     [self.delegate codecAct:btn];
 }
 
+- (void)clearAct:(NSButton *)btn {
+    [self.delegate clearAct:btn];
+}
 - (void)textValueChange:(NSTextField *)text {
     
 }
