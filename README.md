@@ -1,6 +1,6 @@
 # VGA
 VGA是一组用于播放透明度动画和实现透明度转换的工具集</br>
-VGADemo 播放5中类型的透明度视频动画实例</br>
+VGADemo 播放透明度视频动画实例</br>
 VGAPlayer.framework 实现透明度视频的解码与渲染</br>
 VGAMac macOS端用于不同透明度视频的播放与转换工具</br>
 [VGAMac转换工具说明文档](https://github.com/cgeffect/VGA/edit/master/README_MAC.md)
@@ -15,3 +15,15 @@ VGAMac macOS端用于不同透明度视频的播放与转换工具</br>
 ### VGADemo 播放效果
 ![image](https://user-images.githubusercontent.com/15692322/149150758-a14f17ad-3562-42fe-8c3b-f0c2f0754a09.gif)
 ![image](https://user-images.githubusercontent.com/15692322/149150920-191b6c97-c68a-4df1-9b8b-0d66d4ef9a17.gif)
+
+工程目录结构<br/>
+doc: 说明文档<br/>
+VGADemo: 播放透明度视频动画实例<br/>
+----VGAPlayer: 透明度视频播放框架, 包含编解码与渲染<br/>
+----VGADemo: 播放透明度视频动画实例<br/>
+VGAMac: macOS端用于不同透明度视频的播放与转换工具<br/>
+----VGATool: 转换工具代码, 包含编解码与渲染<br/>
+----Example: 转换工具示例<br/>
+
+### 技术要点:
+编解码使用的是苹果原生的AVFoundation框架, 渲染使用的是苹果的Metal框架, 其中Metal代码实现来自我的另外一个项目 https://github.com/cgeffect/CGMetal

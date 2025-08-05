@@ -1,7 +1,31 @@
 # VGA
 
-[功能预览](https://github.com/cgeffect/VGA/edit/master/doc/VGA.key)
-<img width="906" alt="截屏2022-01-14 上午12 25 29" src="https://user-images.githubusercontent.com/15692322/149369561-2c354127-dd89-4a78-bbd2-d8b2af353213.png">
+[功能预览](https://github.com/cgeffect/VGA/edit/master/doc/VGA.key) 可下载该文件查看全部功能
+### UI界面
+#### 输入源:
+1. 可选择文件夹, 文件夹里的视频文件必须是同一种透明的视频类型, 比如都是左边透明度, 右边RGB, 并且各占一半的视频类型
+2. 可以选择单个视频文件
+#### 输入源视频类型: 
+RGBA, LeftAlpha, RightAlpha
+#### 输出目录: 
+选择一个保存转换之后视频的文件夹
+#### 输出视频类型:
+HevcWithAlpha
+LeftAlpha
+LeftScaleAlpha
+RightAlpha
+RightScaleAlpha
+#### 码率:
+输出视频码率(可选), 如果不填写, 将自动适配码率
+#### 生成: 
+开始转换
+#### 清除: 
+删除历史记录, 也可以不清楚, 下一次再选择输入时, 会自动清除上一次使用记录
+#### 点击生成记录内容
+会弹出原视频和转换之后视频渲染之后的效果
+<img width="1600" height="1256" alt="macOS" src="https://github.com/user-attachments/assets/096a76c9-47f8-4d71-862c-5944598c55af" />
+#### 预览效果
+<img width="1600" height="1256" alt="macOS-preview" src="https://github.com/user-attachments/assets/f40beb93-912d-49c5-912f-d59bec8e30c9" />
 
 ## Mac工具
 ### ARGB格式转其他格式
