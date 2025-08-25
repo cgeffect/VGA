@@ -27,3 +27,5 @@ VGAMac: macOS端用于不同透明度视频的播放与转换工具<br/>
 
 ### 技术要点:
 编解码使用的是苹果原生的AVFoundation框架, 渲染使用的是苹果的Metal框架, 其中Metal代码实现来自我的另外一个项目 https://github.com/cgeffect/CGMetal
+
+已知问题: 批量转换的时候, 会偶先生成的视频卡顿, 建议每次只转换一个视频
